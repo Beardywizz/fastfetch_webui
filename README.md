@@ -95,7 +95,7 @@ Preview shows an error: Verify that fastfetch is installed and reachable (which 
 Image uploads rejected: Uninstall python-magic; the program falls back to extension-only validation.
 
 Documentation
-USAGE.md - complete user guide
+[USAGE.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/USAGE.md) - complete user guide
 SECURITY.md - threat model and mitigations
 CONTRIBUTING.md - how to contribute
 CHANGELOG.md - version history
