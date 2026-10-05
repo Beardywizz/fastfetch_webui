@@ -54,12 +54,13 @@ Optional (graceful degradation if missing):
 
 ```bash
 python3 fastfetch_webui.py
+```
 
 That is the entire installation - the program is a single file with no dependencies to install.
 
 On first start you are asked for an access token: type your own (minimum 16 characters, input hidden) or press ENTER to have a secure random token generated and displayed exactly once. Paste it into the browser prompt. The browser opens automatically at http://127.0.0.1:8080.
 
-Usage
+## Usage
 Adding modules
 Drag a chip from the Palette into the Active Modules stack, or click it to append.
 
@@ -95,7 +96,7 @@ Preview shows an error: Verify that fastfetch is installed and reachable (which 
 Image uploads rejected: Uninstall python-magic; the program falls back to extension-only validation.
 
 Documentation
-[USAGE.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/USAGE.md) - complete user guide
+USAGE.md- complete user guide
 SECURITY.md - threat model and mitigations
 CONTRIBUTING.md - how to contribute
 CHANGELOG.md - version history
