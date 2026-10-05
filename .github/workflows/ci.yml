@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Syntax check
+        run: python3 -m py_compile fastfetch_webui.py
+      - name: Documentation check
+        run: |
+          test -f README.md
+          test -f USAGE.md
+          test -f SECURITY.md
+          test -f CONTRIBUTING.md
+          test -f CHANGELOG.md
+          test -f LICENSE
+      - name: Security scan (non-blocking)
+        run: |
+          pip install bandit
+          bandit -r fastfetch_webui.py -f summary || true

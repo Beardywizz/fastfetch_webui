@@ -1,0 +1,5 @@
+# Optional dependencies for FastFetch WebUI
+# The program works without them (graceful degradation)
+
+python-magic>=0.4.0        # MIME type validation (falls back to extension check)
+cryptography>=41.0.0       # HTTPS certificate generation (falls back to HTTP)
