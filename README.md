@@ -97,10 +97,15 @@ Image uploads rejected: Uninstall python-magic; the program falls back to extens
 
 ## Documentation
 [USAGE.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/USAGE.md)- complete user guide
+
 [SECURITY.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/SECURITY.md) - threat model and mitigations
+
 [CONTRIBUTING.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/CONTRIBUTING.md) - how to contribute
+
 [CHANGELOG.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/CHANGELOG.md) - version history
+
 [License](https://github.com/Beardywizz/fastfetch_webui/blob/main/LICENSE) MIT License. See LICENSE.
+
 
 Built with Lumo AI (Proton).
 
