@@ -54,3 +54,69 @@ Optional (graceful degradation if missing):
 
 ```bash
 python3 fastfetch_webui.py
+
+That is the entire installation - the program is a single file with no dependencies to install.
+
+On first start you are asked for an access token: type your own (minimum 16 characters, input hidden) or press ENTER to have a secure random token generated and displayed exactly once. Paste it into the browser prompt. The browser opens automatically at http://127.0.0.1:8080.
+
+Usage
+Adding modules
+Drag a chip from the Palette into the Active Modules stack, or click it to append.
+
+Activating and deactivating modules
+Click the toggle switch on a block. Off moves the block to the Parked Blocks stack and removes it from the config; all properties survive and the block can be reactivated at any time.
+
+Reordering
+Drag blocks vertically within a stack. Changes are published automatically after a short delay.
+
+Changing the logo
+ASCII art: paste it into the ASCII Editor and click Upload ASCII. Images: drag and drop or select a file (PNG, JPG, GIF, WebP, max 2 MB).
+
+Note: image logos render in the preview as blank space, because browsers cannot display terminal image protocols (Kitty, Sixel, iTerm2). Use a terminal with image protocol support (Kitty, WezTerm, foot, Ghostty, recent Konsole) to see image logos. ASCII logos always display correctly.
+
+Backups
+Every save, restore, and structural change creates a timestamped backup in ~/.config/fastfetch/backups/. Restore or delete backups via the Backups panel.
+
+File Locations
+~/.config/fastfetch/
+├── config.jsonc          # main config - the file fastfetch reads
+├── ascii/custom_ascii.txt  # uploaded ASCII art
+├── logos/                # uploaded images (random names)
+├── backups/             # automatic backups (max 50)
+└── webui_state.json     # parked modules (sidecar)
+
+Deleting this program never harms your configuration: the config file remains, and fastfetch continues to work without the web UI.
+
+Troubleshooting
+Token not accepted: Clear the stored session token via the browser console (sessionStorage.removeItem('ff_token')), then reload the page. If the server runs longer than 24 hours, restart it: the token expired.
+
+Preview shows an error: Verify that fastfetch is installed and reachable (which fastfetch && fastfetch --version).
+
+Image uploads rejected: Uninstall python-magic; the program falls back to extension-only validation.
+
+Documentation
+USAGE.md - complete user guide
+SECURITY.md - threat model and mitigations
+CONTRIBUTING.md - how to contribute
+CHANGELOG.md - version history
+License
+MIT License. See LICENSE.
+
+Built with Lumo AI (Proton).
+
+FastFetch WebUI (Deutsche Kurzanleitung)
+FastFetch WebUI ist eine lokale Web-Oberfläche für fastfetch - das Programm, das die Systeminfo-Karte im Terminal zeichnet. Sie richtet sich an alle, die gerade lernen, ihr Linux- oder macOS-System zu personalisieren: Statt die Konfigurationsdatei config.jsonc von Hand zu bearbeiten, baust du deine Anzeige aus Blöcken zusammen, siehst jede Änderung sofort in der Vorschau, und vor jedem Schritt wird automatisch ein Backup angelegt.
+
+Schnellstart
+python3 fastfetch_webui.py
+
+Beim Start wird ein Zugangs-Token abgefragt: eigenes Token eintippen (mindestens 16 Zeichen) oder ENTER für ein einmalig angezeigtes Zufalls-Token. Der Browser öffnet sich automatisch unter http://127.0.0.1:8080.
+
+Grundidee in drei Sätzen
+Baukasten: Module sind farbige Blöcke, die du per Drag-and-drop aus der Palette in deinen aktiven Stapel ziehst, umsortierst und per Schalter an- und abschaltest.
+Live-Vorschau: Nach jeder Änderung wird die echte fastfetch-Ausgabe neu gerendert - was du siehst, kommt später so ins Terminal.
+Sicherheitsnetz: Jede Änderung erzeugt vorher ein Backup; per Klick stellst du jeden früheren Zustand wieder her.
+Die ausführliche Anleitung mit Schritt-für-Schritt-Einführung findest du im englischen Abschnitt oben.
+
+Hinweis zur Sprache
+Diese Seite ist die einzige zweisprachige Dokumentation des Projekts. Alle weiteren Dokumente liegen ausschließlich auf Englisch - das ist Absicht: Die Arbeit mit Linux, Config-Dateien und der zugehörigen Community findet auf Englisch statt. Die deutsche Kurzfassung hilft beim ersten Einstieg; die Details schlägst du in der Sprache nach, in der du langfristig arbeitest.
