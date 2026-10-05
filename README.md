@@ -1,3 +1,4 @@
+<img width="640" height="406" alt="webui" src="https://github.com/user-attachments/assets/09ac6a57-f2cf-4940-a727-74f124e5bb10" />
 # FastFetch WebUI
 
 A self-contained local web UI for configuring [fastfetch](https://github.com/fastfetch-cli/fastfetch), featuring a Scratch-style block builder for arranging system information modules.
