@@ -1,6 +1,6 @@
 # FastFetch WebUI
 
-A self-contained local web UI for configuring [fastfetch] (https://github.com/beardywizz/fastfetch_webui) featuring a Scratch-style block builder for arranging system information modules.
+A self-contained local web UI for configuring [fastfetch](https://github.com/fastfetch-cli/fastfetch), featuring a Scratch-style block builder for arranging system information modules.
 
 **Version 1.0.0 - Initial Public Release**
 
