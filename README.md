@@ -96,15 +96,15 @@ Preview shows an error: Verify that fastfetch is installed and reachable (which 
 Image uploads rejected: Uninstall python-magic; the program falls back to extension-only validation.
 
 ## Documentation
-[USAGE.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/USAGE.md)- complete user guide
+[USAGE.md](USAGE.md)- complete user guide
 
-[SECURITY.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/SECURITY.md) - threat model and mitigations
+[SECURITY.md](SECURITY.md) - threat model and mitigations
 
-[CONTRIBUTING.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/CONTRIBUTING.md) - how to contribute
+[CONTRIBUTING.md](CONTRIBUTING.md) - how to contribute
 
-[CHANGELOG.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/CHANGELOG.md) - version history
+[CHANGELOG.md](CHANGELOG.md) - version history
 
-[License](https://github.com/Beardywizz/fastfetch_webui/blob/main/LICENSE) MIT License. See LICENSE.
+[License](LICENSE) MIT License. See LICENSE.
 
 
 Built with Lumo AI (Proton).
