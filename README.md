@@ -75,10 +75,10 @@ ASCII art: paste it into the ASCII Editor and click Upload ASCII. Images: drag a
 
 Note: image logos render in the preview as blank space, because browsers cannot display terminal image protocols (Kitty, Sixel, iTerm2). Use a terminal with image protocol support (Kitty, WezTerm, foot, Ghostty, recent Konsole) to see image logos. ASCII logos always display correctly.
 
-Backups
+## Backups
 Every save, restore, and structural change creates a timestamped backup in ~/.config/fastfetch/backups/. Restore or delete backups via the Backups panel.
 
-File Locations
+## File Locations
 ~/.config/fastfetch/
 ├── config.jsonc          # main config - the file fastfetch reads
 ├── ascii/custom_ascii.txt  # uploaded ASCII art
@@ -88,15 +88,15 @@ File Locations
 
 Deleting this program never harms your configuration: the config file remains, and fastfetch continues to work without the web UI.
 
-Troubleshooting
+## Troubleshooting
 Token not accepted: Clear the stored session token via the browser console (sessionStorage.removeItem('ff_token')), then reload the page. If the server runs longer than 24 hours, restart it: the token expired.
 
 Preview shows an error: Verify that fastfetch is installed and reachable (which fastfetch && fastfetch --version).
 
 Image uploads rejected: Uninstall python-magic; the program falls back to extension-only validation.
 
-Documentation
-USAGE.md- complete user guide
+## Documentation
+[USAGE.md](https://github.com/Beardywizz/fastfetch_webui/blob/main/USAGE.md)- complete user guide
 SECURITY.md - threat model and mitigations
 CONTRIBUTING.md - how to contribute
 CHANGELOG.md - version history
@@ -108,8 +108,10 @@ Built with Lumo AI (Proton).
 FastFetch WebUI (Deutsche Kurzanleitung)
 FastFetch WebUI ist eine lokale Web-Oberfläche für fastfetch - das Programm, das die Systeminfo-Karte im Terminal zeichnet. Sie richtet sich an alle, die gerade lernen, ihr Linux- oder macOS-System zu personalisieren: Statt die Konfigurationsdatei config.jsonc von Hand zu bearbeiten, baust du deine Anzeige aus Blöcken zusammen, siehst jede Änderung sofort in der Vorschau, und vor jedem Schritt wird automatisch ein Backup angelegt.
 
-Schnellstart
+## Schnellstart
+```bash
 python3 fastfetch_webui.py
+```
 
 Beim Start wird ein Zugangs-Token abgefragt: eigenes Token eintippen (mindestens 16 Zeichen) oder ENTER für ein einmalig angezeigtes Zufalls-Token. Der Browser öffnet sich automatisch unter http://127.0.0.1:8080.
 
